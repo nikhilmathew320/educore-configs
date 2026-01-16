@@ -27,7 +27,3 @@ logging:
   level:
     root: INFO
     com.educore: INFO
-
-application:
-  config:
-    student-url: http://localhost:8090
