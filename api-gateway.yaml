@@ -17,8 +17,12 @@ spring:
           uri: lb://student-service
           predicates:
             - Path=/api/v1/students/**
+          filters:
+            - AuthenticationFilter
 
         - id: school-service
           uri: lb://school-service
           predicates:
             - Path=/api/v1/schools/**
+          filters:
+            - AuthenticationFilter
